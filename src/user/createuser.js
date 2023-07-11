@@ -1,7 +1,7 @@
 
 import Axios from 'axios';
 import { Field, Formik, Form } from 'formik';
-import React from 'react'
+// import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import * as Yup from "yup";
 
@@ -28,7 +28,7 @@ const Createuser = () => {
                 Axios.post('https://api.darwinstech.com/api/register', {
                     'headers': {
                         'Accept': 'application/json'
-                        
+
                     },
                     ...formVal
                 }).then((res) => {
